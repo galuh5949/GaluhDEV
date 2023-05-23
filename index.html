@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galuh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="container">
+	<header class="header">
+		<div class='hero'>
+			<h2 class="heading">Galuh Giyanif</h2>
+				<p class ="sub-heading">Programmer</p>
+		</div>
+		<div class='features feature-1'>
+			<h4 class="price">HTML</h4>
+				<p class="item">!DOCTYPE html</p>
+		</div>
+		<div class='features feature-2'>
+			<h4 class="price">CSS</h4>
+				<p class="item">grid-template-columns</p></div>
+	</header> 
+	<nav class="menu">
+		<div class="menu-toggle">
+			<input type="checkbox"/>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="brand"><h1>Galuh Giyanif</h1></div>
+		<ul class="menu_list"> 
+			<div class="radio-wrapper">
+				<a href="index.html" style="background-color: transparent;" >
+					<div class="btn">
+					<div class="btna">
+					<span aria-hidden="">_</span>HOME
+					<span class="btn__glitch" aria-hidden="">HOME</span>
+					<label class="number">r1</label>
+					</div>
+					</div>
+				</a>
+			</div>
+				
+		    <div class="radio-wrapper">
+				<a href="info.html" style="background-color: transparent;" >
+				    <div class="btn">
+					<div class="btn">
+					<span aria-hidden="">_</span>info
+					<label class="number">r1</label>
+					</div>
+					</div>
+				</a>
+			</div>
+	
+			<div class="radio-wrapper">
+				<a href="project.html" style="background-color: transparent;" >
+				<div class="btn">
+				<div class="btn">
+				<span aria-hidden="">_</span>PROJECT
+				<label class="number">r1</label>
+				</div>
+				</div>
+			</a>
+		    </div>
+		</ul>
+	</nav>
+
+	<div class="batas"></div>
+	<section class="introgallery"><h2>WELCOME TO MY WEBSITE</h2></section>
+	<div class="batas"></div>
+
+	<div class="card">
+		<span>Social</span>
+		<a class="social-link" href="https://instagram.com/galuh.giyanif?igshid=YmMyMTA2M2Y=">
+			<i class="fab fa-instagram" style="color: black;"></i>
+		</a>
+		<a class="social-link" href="https://www.facebook.com/profile.php?id=100076609904588">
+			<i class="fab fa-facebook" style="color: rgb(31, 31, 252);"></i>
+		</a>
+		<a class="social-link" href="mailto:galuh.giyanif01@gmail.com">
+			<i class="far fa-envelope" style="color: rgb(197, 2, 2);"></i>
+		</a>
+		<a class="social-link" href="#">
+			<i class="fab fa-whatsapp" style="color: rgb(136, 224, 3);"></i>
+		</a>
+	</div>
+</div>
+
+	<script>
+		const menuToggle = document.querySelector('.menu-toggle');
+		const nav = document.querySelector('nav ul');
+	  
+		menuToggle.addEventListener('click', function(){
+		  nav.classList.toggle('slide');
+		});
+	  </script>
+	  
+</body>
+</html>
