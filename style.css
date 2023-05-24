@@ -66,51 +66,14 @@ text-align: center;
     font-weight: 200;
 }
 
-.cta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
- 
 
-.titlea{
-  font-size: 1.5em;
-  letter-spacing: 20px;
-  text-align: center;
-  justify-content: center;
-  font-family: fantasy;
-  color: white;
-}
-.parallax{
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
-  
-}
-.introa{
-  background-image: url(img/gm.jpg);
-}
 .contenta{
   background-image: url(img/pi.jpg);
 }
 
-.footera{
-  background-image: url(img/as.jpg);
-}
 
-.int{
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-image: url(img/in.jpg);
-  color: white;
-  z-index: 1;
-  padding: 20px 15px;
-  border:3px solid #ffffff;
-  text-align: center;
-  }
+
+
 
 .introgallery h2{
   background-position: center;
@@ -170,6 +133,164 @@ font-size: 0.8em;
   box-shadow: 0 0 2px rgba(0,0,0,0.5);
   text-align: center;
 }
+
+.tk{
+  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+  padding: 15px;
+  border: 1px solid #ffffffb9 ;
+  border-radius:  3px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.med{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+  align-items: center;
+  text-align: center;
+}  
+
+.medi{
+  padding: 15px;
+  border-radius:  3px;
+}
+
+.icn {
+width:70px;
+height:70px;
+border:1px solid;
+border-radius: 50%;
+text-align: center;
+line-height: 70px;
+font-size: 20px;
+margin:0 auto;
+}
+
+.footerao{
+  background-image: url(img/gn.png);
+}
+
+.introao{
+  background-image: url(img/or.png);
+}
+
+.ctao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+ .titleao{
+  font-size: 1.5em;
+  letter-spacing: 20px;
+  text-align: center;
+  justify-content: center;
+  font-family: fantasy;
+  color: white;
+}
+.parallaxo{
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+.absolute {
+  position: absolute;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.loader {
+  display: flex;
+  margin: 0.25em 0;
+}
+
+.w-2 {
+  width: 0.5em;
+}
+
+.dash {
+  animation: dashArray 2s ease-in-out infinite,
+    dashOffset 2s linear infinite;
+}
+
+.spin {
+  animation: spinDashArray 2s ease-in-out infinite,
+    spin 8s ease-in-out infinite,
+    dashOffset 2s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes dashArray {
+  0% {
+    stroke-dasharray: 0 1 359 0;
+  }
+
+  50% {
+    stroke-dasharray: 0 359 1 0;
+  }
+
+  100% {
+    stroke-dasharray: 359 1 0 0;
+  }
+}
+
+@keyframes spinDashArray {
+  0% {
+    stroke-dasharray: 270 90;
+  }
+
+  50% {
+    stroke-dasharray: 0 360;
+  }
+
+  100% {
+    stroke-dasharray: 270 90;
+  }
+}
+
+@keyframes dashOffset {
+  0% {
+    stroke-dashoffset: 365;
+  }
+
+  100% {
+    stroke-dashoffset: 5;
+  }
+}
+
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+
+  12.5%,
+  25% {
+    rotate: 270deg;
+  }
+
+  37.5%,
+  50% {
+    rotate: 540deg;
+  }
+
+  62.5%,
+  75% {
+    rotate: 810deg;
+  }
+
+  87.5%,
+  100% {
+    rotate: 1080deg;
+  }
+}
+
+
 
 .menu{
     order: -1;
@@ -493,7 +614,63 @@ font-size: 0.8em;
   display: none;
 }
 
+.parallax .introa{
+  display: none;
+}
+
+.parallax .footera {
+  display: none;
+}
+
+.cta {
+  display: none;
+}
+
   @media  (max-width: 1024px){
+    .footera{
+      background-image: url(img/as.jpg);
+    }
+  
+    .introa{
+      background-image: url(img/gm.jpg);
+    }
+
+    .cta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .int{
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      background-image: url(img/in.jpg);
+      color: white;
+      z-index: 1;
+      padding: 20px 25px;
+      border:3px solid #ffffff;
+      text-align: center;
+      }
+     
+    
+     .titlea{
+      font-size: 1.5em;
+      letter-spacing: 20px;
+      text-align: center;
+      justify-content: center;
+      font-family: fantasy;
+      color: white;
+    }
+    .parallax{
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+      
+    }
+
     .menu{
         order: inherit; 
         grid-template-columns: 1fr;
@@ -524,6 +701,9 @@ display: none;
 }
 
 @media  (max-width:768px){
+
+ 
+
     .menu{
         order: -1;
         justify-items: end;
@@ -565,6 +745,9 @@ display: none;
 @media  (max-width:600px){
     body{
         margin: 15px;
+    }
+    .tk {
+      display: none;
     }
     .header{
         grid-template-areas: 
